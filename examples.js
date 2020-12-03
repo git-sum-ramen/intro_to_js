@@ -82,20 +82,30 @@ function evensOneToOneHundred() {
 // evensOneToOneHundred()
 // # Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
 function countOf55s(inputNumbers) {
+  var i = 0;
   var count = 0;
-  inputNumbers.forEach(function(number) {
-    if (number === 55) {
+  while (i < inputNumbers.length) {
+    console.log(inputNumbers[i]);
+    if (inputNumbers[i] === 55) {
       count++;
     }
-    // console.log(number);
-  });
-  return count
+    i++;
+  }
+  return count;
+  // var count = 0;
+  // inputNumbers.forEach(function(number) {
+  //   if (number === 55) {
+  //     count++;
+  //   }
+  //   // console.log(number);
+  // });
+  // return count
 }
 
 var numbers = [1,45,68,23,55,55,55, 55];
 
 
-// console.log(countOf55s(numbers));
+console.log(countOf55s(numbers));
 
 
 // # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
