@@ -1,10 +1,10 @@
 
-var fruits = ["apple", "banana", "watermelon", "cantelope"]
+var fruits = ["apple", "banana", "watermelon", "cantelope"];
 
 
 
 // while loop
-var i = 0;
+// var i = 0;
 
 // while (i < fruits.length) {
 //   console.log(fruits[i]);

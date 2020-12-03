@@ -15,7 +15,7 @@ def print_numbers_divisible_by_three
     index += 1
   end
 end
-print_numbers_divisible_by_three
+# print_numbers_divisible_by_three
 
 
 # Write a method that accepts an array of strings and prints out every other string.
@@ -28,7 +28,7 @@ def print_every_other_item(strings)
     index += 1
   end
 end
-print_every_other_item(["a", "b", "c", "d", "e"])
+# print_every_other_item(["a", "b", "c", "d", "e"])
 
 
 
@@ -43,7 +43,7 @@ def compute_sum(numbers)
   end
   return sum
 end
-puts compute_sum([2, 4, 5])
+# puts compute_sum([2, 4, 5])
 
 # Start with the hash: city_populations = {chi: 2700000}
 # Add populations to the city_populations hash for New York City (8.4 million) and San Francisco (800,000).
@@ -51,15 +51,48 @@ puts compute_sum([2, 4, 5])
 city_populations = {chi: 2700000}
 city_populations[:nyc] = 8400000
 city_populations[:sf] = 800000
-p city_populations
+# p city_populations
 
 # Write a method that prints out every number from 1 to 100. 
 
+def one_to_one_hundred
+  i = 0
+  while i < 100
+    p i + 1
+    i += 1
+  end 
+end
+
+# one_to_one_hundred
 
 # Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
 
+def evens_one_to_one_hundred
+  i = 0
+  while i < 100
+    p i + 1
+    i += 2
+  end 
+end
+
+# evens_one_to_one_hundred
+
 
 # Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
+
+
+def count_of_55s(input_numbers)
+  count = 0
+  input_numbers.each do |number|
+    if number == 55
+      count += 1
+    end
+  end
+  return count
+end
+
+numbers = [1,45,68,23,55,55,55, 55]
+p count_of_55s(numbers)
 
 
 # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
