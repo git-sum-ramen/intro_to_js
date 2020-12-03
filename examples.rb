@@ -92,21 +92,42 @@ def count_of_55s(input_numbers)
 end
 
 numbers = [1,45,68,23,55,55,55, 55]
-p count_of_55s(numbers)
+# p count_of_55s(numbers)
 
 
 # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 # For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
+def awesomesauced(strings)
+  awesome_array = []
+  strings.each do |string|
+    awesome_array << string
+    awesome_array << "awesomesauce"
+  end
+  awesome_array.pop
+  awesome_array
+end
+
+# p awesomesauced(["a", "b", "c", "d", "e"])
+
 
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # Someone just bought two chairs. Change the hash such that the chair amount is 3.
 # The final result should be: {chair: 3, table: 2}
+# item_amounts = {chair: 5, table: 2}
+# item_amounts[:chair] = 3
 
+# p item_amounts
 
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # You received 7 desks to sell. Change the hash to include desks.
 # The final result should be: {chair: 5, table: 2, desk: 7}
+
+item_amounts = {chair: 5, table: 2}
+item_amounts[:desk] = 7
+
+
+# p item_amounts
 
 
 # Write a method that accepts a number and returns its factorial.
