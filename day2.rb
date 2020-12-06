@@ -65,4 +65,4 @@ def sum_combinations(numbers1, numbers2)
 end
 p sum_combinations([1, 5, 10], [100, 500, 1000])
 
-Bonus: Convert the following sorting algorithms from Ruby to JavaScript! https://www.sitepoint.com/sorting-algorithms-ruby/ 
+# Bonus: Convert the following sorting algorithms from Ruby to JavaScript! https://www.sitepoint.com/sorting-algorithms-ruby/ 
