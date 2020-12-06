@@ -43,13 +43,25 @@ function selectEvenItems(strings) {
 
 function descending(numbers) {
   var result = [];
-  var index = numbers.length - 1;
-  for (var i = 0; i < numbers.length; i++) {
+  for (var i = numbers.length - 1; i >= 0;i--) {
     console.log(i);
-    result.push(numbers[index]);
-    index--;
+    result.push(numbers[i]);
   }
   return result;
 }
 
-console.log(descending([1, 3, 5, 7]));
+// console.log(descending([1, 3, 5, 7]));
+
+
+
+function sumCombinations(numbers1, numbers2) {
+  var result = [];
+  numbers1.forEach(function(number1) {
+    numbers2.forEach(function(number2) {
+      result.push(number1 + number2);
+    });
+  });
+  return result;
+}
+
+console.log(sumCombinations([1, 5, 10], [100, 500, 1000]));
